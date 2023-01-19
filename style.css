@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252525;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100vw;
+    height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.box1, .box2, .box6 {
+    background-color: lightgreen;
+}
+
+.box3, .box5, .box7 {
+    background-color: rgb(225, 71, 71);
+}
+
+.box4, .box8 {
+    background-color: rgb(232, 232, 76);
+}
+
+.box1 {
+    grid-row: span 3;
+}
+
+.box2 {
+    grid-column: span 2;
+}
+
+.box6 {
+    grid-row: span 2;
+}
+
+.box1:hover p {
+    transform: scale(2) rotate(360deg);
+}
+
+.box2:hover p {
+    transform: scale(2) rotate(360deg);
+}
+
+.box3:hover p {
+    transform: scale(2) rotate(360deg);
+}
+
+.box4:hover p {
+    transform: scale(2) rotate(360deg);
+}
+
+.box5:hover p {
+    transform: scale(2) rotate(360deg);
+}
+
+.box6:hover p {
+    transform: scale(2) rotate(360deg);
+}
+
+.box7:hover p {
+    transform: scale(2) rotate(360deg);
+}
+
+.box8:hover p {
+    transform: scale(2) rotate(360deg);
+}
+
+p {
+    transition: 0.50s;
+}
